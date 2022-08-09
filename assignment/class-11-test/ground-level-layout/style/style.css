@@ -1,0 +1,108 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(42, 78, 142);
+  color: antiquewhite;
+}
+
+header {
+  min-width: 100%;
+}
+
+.navMain {
+  display: flex;
+  align-items: center;
+}
+
+.navMain > section {
+  display: flex;
+  flex-basis: 33.3333%;
+  flex: 1;
+}
+
+.navRight {
+  display: flex;
+}
+
+.logoParent {
+  display: flex;
+}
+
+.logoItem {
+  list-style: none;
+  font-size: 18px;
+  padding: 1rem;
+}
+
+.navCenter {
+  justify-content: center;
+}
+
+.navLeft {
+  justify-content: flex-end;
+}
+
+.btnLeft {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: black;
+  margin-right: 10rem;
+}
+
+.mainText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.mainText h1 {
+  width: 30%;
+  text-align: center;
+}
+
+.mainText p {
+  width: 30%;
+
+  text-align: center;
+}
+
+.mainText p + span {
+  padding: 1rem;
+}
+
+.mainText span + span {
+  padding: 3rem;
+}
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+
+@media screen and (max-width: 800px) {
+  .logoParent {
+    padding-left: 1rem;
+  }
+  .btnLeft {
+    margin-right: 1rem;
+  }
+
+  .mainText h1,
+  p {
+    min-width: 80%;
+  }
+}

@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+main {
+  float: left;
+  width: auto;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+nav section {
+  float: left;
+  width: 50%;
+}
+
+nav i {
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+nav section > ul,
+form {
+  float: left;
+  padding: 1rem;
+  width: 50%;
+}
+
+nav section ul {
+  width: 80%;
+}
+
+nav section form {
+  width: 20%;
+}
+
+nav section form button {
+  padding: 0.3rem;
+}
+
+nav ul li {
+  float: left;
+  width: 15%;
+  list-style: none;
+}
+
+main > section {
+  float: left;
+  width: 100%;
+  background-color: cadetblue;
+}
+
+main > section section {
+  float: left;
+  padding: 1rem;
+  width: 50%;
+}
+main > section section h1,
+p,
+form {
+  padding: 1rem;
+}
+
+main > section section h1,
+p {
+  width: 50%;
+  margin: 0 auto;
+}
+
+main > section section form {
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  height: 110px;
+  border: 1px solid tan;
+
+  clear: both;
+}
+
+main {
+  height: 180px;
+  clear: both;
+}
+
+section {
+  height: 500px;
+  width: 20%;
+
+  border: 1px solid violet;
+
+  float: left;
+}
+
+section + section {
+  width: 80%;
+}

@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container div {
+  width: 100px;
+
+  height: 100px;
+  border: 1px solid gainsboro;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.color1 {
+  background-color: blue;
+}
+
+.color2 {
+  color: antiquewhite;
+
+  background-color: black;
+}
+
+.color3 {
+  background-color: orange;
+}
+
+.color4 {
+  background-color: red;
+}
+
+.color5 {
+  background-color: indigo;
+}

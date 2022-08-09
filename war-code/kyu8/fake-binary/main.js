@@ -1,0 +1,131 @@
+//Code a function that will replace every letter in a string === 0
+let example = "45385593107843568";
+
+const fakebin = (a) =>
+  a
+    .split("")
+    .map((el) => {
+      parseInt(el, 10);
+
+      return el < 5 ? 0 : 1;
+    })
+    .join("");
+
+// console.log(fakebin(example));
+
+//A reverse a string
+
+const reverseString = (str) => str.split("").reverse().join("");
+
+// console.log(reverseString("eeeea"));
+
+//A get average of array
+
+function getAverage(a) {
+  const newArr = a.reduce((sum, b) => sum + b) / a.length;
+  return newArr;
+}
+
+// console.log(getAverage([1, 2, 3, 4]));
+
+function permiterOrRectangle(l, w) {
+  if (l === w) {
+    return l * w;
+  } else {
+    return l + l + w + w;
+  }
+}
+
+// console.log(permiterOrRectangle(10, 10));
+
+function makeIntNegative(a) {
+  return a < 0 ? a : -a;
+}
+
+// console.log(makeIntNegative(10));
+
+//Make el * el
+
+function makeEl(a) {
+  return a.map((e) => e + e);
+}
+
+// console.log(makeEl([1, 2, 3]));
+
+function literMuch(a) {
+  return Math.floor(a * 0.5);
+}
+
+//
+function getSum(a, b) {
+  if (a === b) {
+    return a;
+  }
+
+  const arr = [];
+
+  arr.push(a, b);
+
+  const arrSort = [];
+
+  const arrSum = [];
+
+  const intMin = Math.min(...arr);
+
+  const intMax = Math.max(...arr);
+
+  for (let i = intMin; i <= intMax; i++) {
+    arrSort.push(i);
+    arrSum.push(i);
+  }
+
+  const sum = arrSum.reduce((sum, now) => sum + now, 0);
+
+  return sum;
+
+  //Good luck!
+}
+console.log(getSum(-1, 2));
+
+function locateAndAdd(a, b) {
+  if (a === b) {
+    return a;
+  }
+  //Create array to keep the result of loop
+  const arr = [];
+
+  const betterArr = [];
+  const everyThing = [];
+  arr.push(a, b);
+  const smallestInt = Math.min(...arr);
+
+  const largestArr = Math.max(...arr);
+
+  for (let i = smallestInt; i <= largestArr; i++) {
+    betterArr.push(i);
+    everyThing.push(i);
+  }
+
+  const sum = everyThing.reduce((a, w) => a + w, 0);
+  return sum;
+}
+
+// console.log(locateAndAdd(0, -1));
+
+//Price of Car
+
+function priceOfCar(sale, used) {
+  let amountSale = 0;
+  if (used < 3) {
+    amountSale = 80;
+  } else if (used > 10) {
+    amountSale = 50;
+  } else if (used >= 3 && used <= 10) {
+    amountSale = 70;
+  }
+
+  const value = (amountSale / 100) * sale;
+  return value;
+}
+
+// console.log(priceOfCar(1000, 11));

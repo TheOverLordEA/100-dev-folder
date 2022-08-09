@@ -1,0 +1,23 @@
+header,
+section,
+footer {
+  height: 100px;
+  border: 1px solid black;
+  clear: both;
+}
+
+section {
+  float: left;
+  width: 10%;
+  height: 150px;
+}
+
+section + section + section {
+  float: left;
+  width: 50%;
+}
+
+.main-body {
+  float: left;
+  width: 100%;
+}

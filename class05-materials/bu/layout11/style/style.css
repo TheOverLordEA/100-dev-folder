@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+  padding: 0;
+}
+
+header,
+main,
+footer {
+  border: 1px solid rosybrown;
+  height: 100px;
+  clear: both;
+}
+
+section {
+  border: 1px solid goldenrod;
+  height: 100%;
+  width: 10%;
+  float: left;
+}
+
+section + section {
+  width: 50%;
+}
+
+section + section + section {
+  width: 40%;
+}

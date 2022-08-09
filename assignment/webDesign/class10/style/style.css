@@ -1,0 +1,83 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  border-bottom: 1px solid gainsboro;
+}
+
+nav {
+  display: flex;
+}
+
+nav div {
+  display: flex;
+  width: 33.3333%;
+  flex: 1;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center ul {
+  display: flex;
+}
+
+.nav-center ul li {
+  display: flex;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.nav-left {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left button {
+  /* width: 100px;
+  height: 28px; */
+  background-color: yellow;
+
+  border-radius: 1rem;
+}
+footer {
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

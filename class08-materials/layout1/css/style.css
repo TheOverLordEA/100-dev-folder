@@ -1,0 +1,141 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  min-width: 100%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+}
+
+nav {
+  height: 100vh;
+  width: 15%;
+  float: left;
+  border: 1px solid rebeccapurple;
+}
+
+main {
+  border: 1.8px solid burlywood;
+  height: 100vh;
+  float: left;
+  text-align: start;
+  width: 65%;
+
+  padding-left: 1rem;
+}
+
+aside {
+  float: left;
+  height: 100vh;
+  background-color: azure;
+  width: 20%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+img {
+  padding: 1rem 1rem 0rem 1rem;
+  width: 200px;
+}
+
+h3 {
+  color: rgb(210, 251, 61);
+  padding: 1rem;
+
+  margin-top: -1rem;
+}
+
+h3 + span {
+  padding: 1rem;
+}
+
+ul {
+  margin-left: -2.8rem;
+}
+
+li {
+  padding: 1rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.content {
+  clear: both;
+
+  padding-top: 1rem;
+}
+
+h1 {
+  clear: both;
+}
+
+.content-detail {
+  clear: both;
+}
+
+.cotent-main {
+  clear: both;
+}
+
+.main-asset {
+  max-width: 100%;
+  clear: both;
+}
+
+.main-asset + span {
+  clear: both;
+}
+
+.bottom {
+  float: left;
+}
+
+.bottom h2 {
+  width: 50%;
+}
+
+.bottom p {
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  nav,
+  main,
+  aside {
+    min-width: 100%;
+  }
+}

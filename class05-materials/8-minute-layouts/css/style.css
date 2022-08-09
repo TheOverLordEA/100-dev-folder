@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+header,
+/* main, */
+footer {
+  height: 100px;
+  clear: both;
+  border: 1px solid black;
+}
+
+section {
+  float: left;
+  border: 1px solid cadetblue;
+  height: 100px;
+  width: 33.3333%;
+}

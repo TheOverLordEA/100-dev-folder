@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  min-width: 100vw;
+  display: flex;
+
+  align-items: center;
+  padding: 1rem;
+}
+
+.header-left-side {
+  display: flex;
+  min-width: 25%;
+  padding-left: 1.8rem;
+  align-items: center;
+}
+
+.header-left-side > .parent-logo {
+  display: flex;
+}
+
+.parent-logo > .logo-letter {
+  font-size: xx-large;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav > ul > li {
+  list-style-type: none;
+}

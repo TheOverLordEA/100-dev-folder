@@ -1,0 +1,40 @@
+.container {
+  width: 538px;
+  clear: both;
+}
+
+section,
+aside {
+  margin: 1.858736059; /* widthEl % containerEl = targerWidth */
+
+  height: 100px;
+}
+
+section {
+  float: left;
+
+  width: 63.197026%; /* 350 % 538 = 63.197026% */
+  background-color: rgb(44, 111, 59);
+}
+
+aside {
+  float: right;
+  width: 29.3680297%; /* 158 % 538 = 29.3680297% */
+  background-color: rgb(133, 199, 123);
+}
+
+/* A css way to make elemnent scalable based on the client viewport or devic */
+
+img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  section,
+  aside {
+    margin: 1.8%;
+
+    float: none;
+    width: auto;
+  }
+} ;

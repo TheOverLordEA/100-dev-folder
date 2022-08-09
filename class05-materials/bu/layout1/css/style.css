@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  height: 100px;
+
+  border: 1px solid black;
+  clear: both;
+}
+
+main {
+  border: 1px solid black;
+  height: 180px;
+}
+
+main > section {
+  border: 1px solid wheat;
+  height: 100%;
+  width: 30%;
+
+  float: left;
+}
+
+section {
+  border: 1px solid rebeccapurple;
+  height: 180px;
+  width: 50%;
+
+  float: left;
+}
