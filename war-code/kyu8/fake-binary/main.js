@@ -129,3 +129,73 @@ function priceOfCar(sale, used) {
 }
 
 // console.log(priceOfCar(1000, 11));
+
+//convert let to a string
+
+function make(e) {
+  const a = String(e);
+}
+
+// console.log(make(true));
+
+//A program that count every first and secon el
+function getEl(arr) {
+  let arre = 0;
+
+  const below = [];
+
+  const opene = [];
+
+  if (arr.length === 0 || arr.length === null) {
+    return [];
+  }
+
+  if (arr.length === 1 && arr[0] === 0) {
+    return arr[0];
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      arre++;
+    }
+    if (arr[i] < 0) {
+      below.push(arr[i]);
+    }
+  }
+  const answer = below.reduce((a, b) => a + b, 0);
+  opene.push(arre, answer);
+
+  console.log(opene);
+}
+
+// console.log(getEl([0]));
+
+// function countPositivesSumNegatives(input) {
+//   let intSum = 0;
+
+//   const answer = [];
+
+//   if (input.length === 1 && input[0] === 0) {
+//     return 0;
+//   }
+
+//   for (let e of input) {
+//     if (e === null) {
+//       return [];
+//     }
+//   }
+
+//   input.forEach((e) => (e > 0 ? intSum++ : 0));
+
+//   const newArr = input
+//     .filter((e) => (e < 0 ? e : 0))
+//     .reduce((a, b) => a + b, 0);
+
+//   answer.push(intSum, newArr);
+//   return answer;
+//   // your code here
+// }
+
+// console.log(countPositivesSumNegatives([0, 0]));
+
+//

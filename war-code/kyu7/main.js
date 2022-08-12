@@ -42,3 +42,48 @@ function removeVowel(string) {
 }
 
 // console.log(removeVowel(`What are you, a communist?`));
+
+//Code a function that takes a string int int
+function sayian(str, int, times) {
+  //loop string
+
+  return Array(times).fill(str.split(" ")[int]).join("-");
+
+  //multiple
+}
+// console.log(
+//   sayian(
+//     "Creativity is the process of having original ideas that have value. It is a process; it's not random.",
+//     8,
+//     10
+//   )
+// );
+
+//Sum array odd numbers
+const sumOddNumber = (n) => {
+  //Find the first digit
+  let firstDigit = n * n - (n - 1);
+
+  let answer = 0;
+  let count = 0;
+
+  while (count < n) {
+    if (firstDigit % 2 !== 0) {
+      answer += firstDigit;
+      count++;
+    }
+    firstDigit++;
+  }
+
+  return answer;
+};
+
+// sumOddNumber(18);
+
+//Know if triangle
+function isTriangle(a, b, c) {
+  if (a + b > c && a + c > b && b + c > a) {
+    return true;
+  }
+  return false;
+}
