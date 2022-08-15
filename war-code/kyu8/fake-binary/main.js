@@ -199,3 +199,20 @@ function getEl(arr) {
 // console.log(countPositivesSumNegatives([0, 0]));
 
 //
+
+//A sum a num to
+
+function sumInt(num) {
+  let sum = 0;
+
+  const newArr = [];
+
+  for (let i = 1; i <= num; i++) {
+    sum += 1;
+    newArr.push(sum);
+  }
+
+  return newArr.reduce((a, b) => a + b, 0);
+}
+
+// console.log(sumInt());
