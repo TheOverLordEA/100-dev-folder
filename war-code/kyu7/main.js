@@ -87,3 +87,16 @@ function isTriangle(a, b, c) {
   }
   return false;
 }
+
+//Find the highest and minium int in a array
+
+function highLow(array) {
+  const minNumber = Math.min(...array);
+  const largestNumber = Math.max(...array);
+  let total = [];
+
+  total.push(minNumber, largestNumber);
+  console.log(total);
+}
+
+highLow([2334454, 5]);
