@@ -99,4 +99,4 @@ function highLow(array) {
   console.log(total);
 }
 
-highLow([2334454, 5]);
+// highLow([2334454, 5]);
