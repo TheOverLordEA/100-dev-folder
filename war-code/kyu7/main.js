@@ -100,3 +100,27 @@ function highLow(array) {
 }
 
 // highLow([2334454, 5]);
+
+//Number of people on the bus
+function numberOnBus(a) {
+  let assist = [];
+  //Loop array
+
+  for (let i = 0; i < a.length; i++) {
+    const sum = a[i][0] - a[i][1];
+    assist.push(sum);
+  }
+  //Minus i[0] with i[1]
+
+  //Then push all element
+
+  return assist.reduce((a, b) => a + b, 0);
+}
+
+// console.log(
+//   numberOnBus([
+//     [10, 0],
+//     [3, 5],
+//     [5, 8],
+//   ])
+// );
