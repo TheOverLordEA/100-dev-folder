@@ -124,3 +124,22 @@ function numberOnBus(a) {
 //     [5, 8],
 //   ])
 // );
+
+//write function accumulator
+function multiple(str) {
+  const arr = str.split("");
+  let box = [];
+  console.log(arr);
+
+  const aa = arr.map((ele, index) => {
+    const ee = ele.repeat(index + 1);
+
+    return ee;
+  });
+
+  console.log(aa);
+
+  return box;
+}
+
+// console.log(multiple("cwAt"));
