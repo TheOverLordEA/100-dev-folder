@@ -10,13 +10,13 @@ bento.vegtable = "oniion";
 bento.tofu = "allow";
 
 bento.fryTofu = function () {
-  this.tofu = "smoked";
+  return (this.tofu = "smoked");
 };
 
 bento.addSauce = function () {
-  this.sauce += "lavaa";
+  return (this.sauce += "lavaa");
 };
 
 bento.changeGreens = function () {
-  this.vegtable = "gokus";
+  return (this.vegtable = "gokus");
 };
