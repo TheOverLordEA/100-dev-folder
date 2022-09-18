@@ -143,3 +143,7 @@ function multiple(str) {
 }
 
 // console.log(multiple("cwAt"));
+
+//Write function to sum kyu
+
+function series(a) {}
