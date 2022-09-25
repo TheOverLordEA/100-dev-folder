@@ -236,3 +236,30 @@ function student(exam, projects) {
 }
 
 // console.log(student(87, 5));
+
+//Goal
+function goal() {}
+
+//A other
+function removeEveryOther(arr) {
+  //your code here
+  let focus = [];
+  for (let i = 0; i < arr.length; i += 2) {
+    focus.push(arr[i]);
+  }
+  return focus;
+}
+
+// console.log(removeEveryOther(["Hello", "Goodbye", "Hello Again"]));
+
+//Loop a word n of time
+function repeatStr(n, s) {
+  let final = "";
+  for (let i = 1; i <= n; i++) {
+    final += s;
+  }
+
+  return final;
+}
+
+console.log(repeatStr(10, "ea"));
