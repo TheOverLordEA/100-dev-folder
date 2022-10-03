@@ -19,5 +19,3 @@ class ButtonFirst extends Game {
     return (el.textContent = value);
   }
 }
-
-const button = new ButtonFirst("div", "O");
