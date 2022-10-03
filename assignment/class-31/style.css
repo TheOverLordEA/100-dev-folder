@@ -11,3 +11,7 @@ main {
 div {
   height: 100px;
 }
+
+div:hover {
+  background: rgba(82, 237, 230, 0.8);
+}
