@@ -262,4 +262,4 @@ function repeatStr(n, s) {
   return final;
 }
 
-console.log(repeatStr(10, "ea"));
+// console.log(repeatStr(10, "ea"));
