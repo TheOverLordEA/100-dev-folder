@@ -1,0 +1,13 @@
+* {
+  border: 1px solid blue;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+
+div {
+  height: 100px;
+}
