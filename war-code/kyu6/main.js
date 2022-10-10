@@ -20,4 +20,30 @@ function a(st) {
   return str;
 }
 
-console.log(a("camelCasingTest"));
+// console.log(a("camelCasingTest"));
+
+//Function find walk
+
+function findPath(array) {
+  let answer = [];
+
+  if (array.length === 10) {
+    for (let i = 0; i < array.length; i++) {
+      // if (array[i] === "s" || array[i] === "e") {
+      //   answer.push(-1);
+      // } else {
+      //   answer.push(1);
+      // }
+
+      array[i] === "s" || array[i] === "e" ? answer.push(-1) : answer.push(1);
+    }
+    console.log(answer.reduce((a, e) => a + e, 0));
+    if (answer.reduce((a, b) => a + b, 0) !== 0) {
+      return false;
+    }
+    return true;
+  }
+  return false;
+}
+
+// console.log(findPath(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"]));
